@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.List;
+import java.util.Map;
 
 /*
 Имя, раса, профа, стиль и жизненный путь
@@ -42,9 +43,8 @@ public class Character {
     private int improvementPoints;
     private int tempStamina;
     private int tempHP;
-    /*
-Нужно подумать, как реализовать заполнение репы и процесса обучения, так как там по сути будет цифра и зависящий текст. Через объект отдельный чтоль?
- */
+    private Map<String, Integer> reputation;
+    private Map<String, Integer> tranining;
     private int awareness = 0;
     private int business = 0;
     private int deduction = 0;

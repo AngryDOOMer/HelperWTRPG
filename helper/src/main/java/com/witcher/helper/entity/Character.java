@@ -733,10 +733,6 @@ public class Character {
         this.vigor = vigor;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public String getCharacterOwner() {
         return characterOwner;
     }
@@ -838,5 +834,8 @@ public class Character {
     }
     public void addLifeEvents(String lifeEvents) {
         this.lifeEvents.add(lifeEvents);
+    }
+
+    public Character() {
     }
 }
